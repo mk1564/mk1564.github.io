@@ -1,61 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	 <style>
-html {
-  overflow:   scroll;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
-a {
-<!-- font-family: sans-serif;
- -->  color: black;
-  text-decoration: none; 
-}
 
-a:visited {
-  color: black;
-background-color: transparent;
-  text-decoration: none;
-  
-
-
-}
-</style>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174145322-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-174145322-1');
-</script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Chrome, Firefox OS and Opera Status Bar Color -->
-  <meta name="theme-color" content="#FFFFFF">
-  <meta property="og:title" content="Intro to MATLAB">
-    <meta property="og:type" content="blog">
-  <title>Intro to MATLAB</title>
-  <!-- Favicon -->
-    <link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/m-lowercase.png">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
-  <style>
-    :root {
-      font-size: 18px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
 
+  <link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/m-lowercase.png">
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>Intro to MATLAB&nbsp;|&nbsp;Min Kim</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="Intro to MATLAB">
+  
+  
+    <meta property="og:image" content="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2538b60-0bd3-4143-8c92-ac6fe6594316%2Fkisspng-matlab-mathworks-simulink-computer-software-eigenf-deep-learning-5b1964039afd29.2443711415283906596348.png?table=block&amp;id=407cde2d-3d31-4f11-88f7-26d337153291">
+  
+  <style>
     .DateTagBar {
       margin-top: 1.0rem;
     }
@@ -64,56 +40,85 @@ background-color: transparent;
 
 <body>
   <nav class="Navbar">
-    <a href="index.html">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://img.icons8.com/metro/26/000000/m-lowercase.png"></span> 
-	<!--   <span>Home</span> -->
-	  </div>
-    </a>
-                                    <span class="Navbar__Delim">&nbsp;&centerdot;&nbsp;</span>
-    <a href="research.html">
-      <!-- <div class="Navbar__Btn">  -->
-	  <span>Research</span></div>
-    </a>
-                <span class="Navbar__Delim">&nbsp;&centerdot;&nbsp;</span>
-    <a href="teaching.html">
-      <!-- <div class="Navbar__Btn">  -->
-	  <span>Teaching</span></div>
-    </a>
-                        <span class="Navbar__Delim">&nbsp;&centerdot;&nbsp;</span>
-    <a href="resources.html">
-      <!-- <div class="Navbar__Btn">  -->
-	  <span>Resources</span></div>
-    </a>
-                                  </nav>
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+        <span><img class="inline-img-icon" src="https://img.icons8.com/metro/26/000000/m-lowercase.png"></span>&nbsp;
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+  
+    
+  
+    
+      <span class="Navbar__Delim">&centerdot;</span>
+      <a href="research.html">
+        <div class="Navbar__Btn">
+          
+          <span>Research</span>
+        </div>
+      </a>
+    
+  
+    
+      <span class="Navbar__Delim">&centerdot;</span>
+      <a href="teaching.html">
+        <div class="Navbar__Btn">
+          
+          <span>Teaching</span>
+        </div>
+      </a>
+    
+  
+    
+  
+    
+      <span class="Navbar__Delim">&centerdot;</span>
+      <a href="resources.html">
+        <div class="Navbar__Btn">
+          
+          <span>Resources</span>
+        </div>
+      </a>
+    
+  
+    
+  
+    
+  
+    
+  
+</nav>
   <header class="Header">
-          <div class="Header__Cover">
+    
+      <div class="Header__Cover">
         <img src="https://www.notion.so/images/page-cover/solid_blue.png">
       </div>
-          <div class="Header__Spacer ">
+    
+    <div class="Header__Spacer ">
     </div>
-        <div class="Header__Icon"><span><img class="inline-img-icon" src="https://upload.wikimedia.org/wikipedia/commons/archive/2/21/20170128174109%21Matlab_Logo.png"></span></div>
-	    
-        <h1 class="Header__Title">Intro to MATLAB</h1>
-          </header>	
-      <article id="https://www.notion.so/407cde2d3d314f1188f726d337153291" class="PageRoot"><div id="https://www.notion.so/cc9c36f6d4f044d0b866922ea0a8f567" class="ColorfulBlock ColorfulBlock--BgGray Callout"><div class="Callout__Icon"><div class="Icon">💡</div></div><p class="Callout__Content"><span class="SemanticStringArray"><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedBg SemanticString__Fragment--BgGray">We will use Zoom for the meeting. To create an account, visit: </mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedBg SemanticString__Fragment--BgGray"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://it.rutgers.edu/zoom/">https://it.rutgers.edu/zoom/</a></mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedBg SemanticString__Fragment--BgGray"> </mark></span></span></p></div><ul class="BulletedListWrapper"><li id="https://www.notion.so/23938a7bb15a4dac8b0c6a52bc08f498" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Date</strong></span><span class="SemanticString">: August 31</span></span></li><li id="https://www.notion.so/e912edfd70b346f496fff0aa0f844e11" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Time</strong></span><span class="SemanticString">: 9am - 11am (EDT)</span></span></li><li id="https://www.notion.so/68b701170e0b4a02979d001dd16354e5" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Files:</strong></span></span><a id="https://www.notion.so/171fec482fad49aab98ed2bc03bfe70e" class="File" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F369a6fa5-c346-4065-b559-73f17dd00000%2Fsyllabus.pdf?table=block&amp;id=171fec48-2fad-49aa-b98e-d2bc03bfe70e"><div><div class="File__Icon"><svg viewBox="0 0 30 30" style="width:1.35em;height:1.35em;fill:inherit"><g><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></g></svg></div><div><span class="File__Title">syllabus.pdf</span><span class="File__Size">94.3KB</span></div></div></a><a id="https://www.notion.so/421917e10b03427cba3801d93288cf9a" class="File" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5a3e93f7-19d9-44f9-8cd8-906f72aaf9c6%2Fhandout.pdf?table=block&amp;id=421917e1-0b03-427c-ba38-01d93288cf9a"><div><div class="File__Icon"><svg viewBox="0 0 30 30" style="width:1.35em;height:1.35em;fill:inherit"><g><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></g></svg></div><div><span class="File__Title">handout.pdf</span><span class="File__Size">404.8KB</span></div></div></a></li><li id="https://www.notion.so/42f17a5a4bed48c49a49d18e5d1a15c6" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Lecture slides:</strong></span></span><div id="https://www.notion.so/1a456d2d02ed4b8b98374c94e5309e69" class="Embed"><div class="Embed__Content"><div class="Embed__ResponsiveContainer" style="width:100%;height:434px"><iframe src="https://slides.com/mk1564/matlab/embed?style=light" sandbox="allow-scripts allow-popups allow-forms allow-same-origin" allowfullscreen=""></iframe></div></div><p class="Embed__Caption"><span class="SemanticStringArray"></span></p></div></li></ul><div id="https://www.notion.so/ca749649bcb54a608d623f0e10a87b70" class="Divider"></div><div id="https://www.notion.so/7772c59cf39343bdae961ceac9cc93f8" class="Image Image--Normal"><figure><a href="https://notion-ga.astrocket.vercel.app/collect?tid=UA-174174877-1&amp;host=notion.so&amp;page=Intro-to-MATLAB-7ee4975c738f45afac5e2d09fe814307?width=1"><img src="https://notion-ga.astrocket.vercel.app/collect?tid=UA-174174877-1&amp;host=notion.so&amp;page=Intro-to-MATLAB-7ee4975c738f45afac5e2d09fe814307?width=1" style="width:1px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div></article><!--   <footer class="Footer">
-  		   <div>
-	<script >
-      update = new Date(document.lastModified)
-theMonth = update.getMonth() + 1
-theDate = update.getDate()
-theYear = update.getFullYear()
-document.writeln("<I>Last updated:" + theMonth + "/" + theDate + "/" + theYear + "</I>")
-       </script>
-	   </div>
-	   		   <div>&nbsp;&centerdot;&nbsp;</div>
-        <div>&copy; Min Kim 2020</div>
-        <div>&nbsp;&centerdot;&nbsp;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
-            rel="noopener noreferrer">Notablog&nbsp;</a>
-        </div>
-
-    </footer> -->
-		       </header>
+    
+      <div class="Header__Icon">
+        <span><img class="inline-img-icon" src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2538b60-0bd3-4143-8c92-ac6fe6594316%2Fkisspng-matlab-mathworks-simulink-computer-software-eigenf-deep-learning-5b1964039afd29.2443711415283906596348.png?table=block&amp;id=407cde2d-3d31-4f11-88f7-26d337153291"></span>
+      </div>
+    
+    <!-- <h1 class="Header__Title">Intro to MATLAB</h1> -->
+			<br><br>
+    
+  </header>
+  <article id="https://www.notion.so/407cde2d3d314f1188f726d337153291" class="PageRoot"><ul class="BulletedListWrapper"><li id="https://www.notion.so/23938a7bb15a4dac8b0c6a52bc08f498" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Date</strong></span><span class="SemanticString">: August 31</span></span></li><li id="https://www.notion.so/e912edfd70b346f496fff0aa0f844e11" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Time</strong></span><span class="SemanticString">: 10am - 3pm (with 1 hour of lunch break)</span></span></li><li id="https://www.notion.so/68b701170e0b4a02979d001dd16354e5" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Files:</strong></span></span><a id="https://www.notion.so/171fec482fad49aab98ed2bc03bfe70e" class="File" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F36d1ec53-b9b1-41a4-8be4-9b7424ba508c%2Fsyllabus.pdf?table=block&amp;id=171fec48-2fad-49aa-b98e-d2bc03bfe70e"><div><div class="File__Icon"><svg viewBox="0 0 30 30" style="width:1.35em;height:1.35em;fill:inherit"><g><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></g></svg></div><div><span class="File__Title">syllabus.pdf</span><span class="File__Size">100.0KB</span></div></div></a><a id="https://www.notion.so/ce99e48af1f24df5a0a81a7a28df7c4b" class="File" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9753262e-7afa-467e-a176-450d2bc19871%2Fcollatz.m?table=block&amp;id=ce99e48a-f1f2-4df5-a0a8-1a7a28df7c4b"><div><div class="File__Icon"><svg viewBox="0 0 30 30" style="width:1.35em;height:1.35em;fill:inherit"><g><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></g></svg></div><div><span class="File__Title">collatz.m</span><span class="File__Size">0.5KB</span></div></div></a></li><li id="https://www.notion.so/42f17a5a4bed48c49a49d18e5d1a15c6" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Lecture slides:</strong></span></span><div id="https://www.notion.so/1a456d2d02ed4b8b98374c94e5309e69" class="Embed"><div class="Embed__Content"><div class="Embed__ResponsiveContainer" style="width:100%;height:434px"><iframe src="https://slides.com/mk1564/matlab/embed?style=light" sandbox="allow-scripts allow-popups allow-forms allow-same-origin" allowfullscreen=""></iframe></div></div><p class="Embed__Caption"><span class="SemanticStringArray"></span></p></div></li></ul><div id="https://www.notion.so/ca749649bcb54a608d623f0e10a87b70" class="Divider"></div><div id="https://www.notion.so/7772c59cf39343bdae961ceac9cc93f8" class="Image Image--Normal"><figure><a href="https://notion-ga.astrocket.vercel.app/collect?tid=UA-174174877-1&amp;host=notion.so&amp;page=Intro-to-MATLAB-7ee4975c738f45afac5e2d09fe814307?width=1"><img src="https://notion-ga.astrocket.vercel.app/collect?tid=UA-174174877-1&amp;host=notion.so&amp;page=Intro-to-MATLAB-7ee4975c738f45afac5e2d09fe814307?width=1" style="width:1px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div></article>
+  <footer class="Footer">
+  <div>&copy; Min Kim 2019-2021</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
 </body>
 
 </html>
