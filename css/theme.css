@@ -1174,9 +1174,5 @@ pre.Code code {
 
 .main__paragraph {
   display: flex;
-}
-
-.main__title {
-    font-weight: bold;
-    font-size: 200%
+    flex-wrap: wrap;
 }
