@@ -1159,24 +1159,3 @@ pre.Code code {
   color: var(--color-text-default-light);
   font-size: 0.875em;
 }
-
-
-/* main page */
-
-
-.main__text {
- margin-left: 30px
-}
-
-.main__image {
-    display: block
-}
-
-.main__paragraph {
-  display: flex;
-}
-
-.main__title {
-    font-weight: bold;
-    font-size: 200%
-}
