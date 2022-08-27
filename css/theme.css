@@ -1169,10 +1169,11 @@ pre.Code code {
 }
 
 .main__image {
-    display: block
+    display: flex;
 }
 
 .main__paragraph {
+	    /* padding: 200px 50px; */
   display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
